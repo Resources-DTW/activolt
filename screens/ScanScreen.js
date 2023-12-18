@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import LottieView from "lottie-react-native";
 
@@ -13,11 +13,12 @@ const ScanScreen = ({ navigation }) => {
           Find your Bluetooth devices
         </Text>
         <View className="flex-1 items-center justify-center">
+          {/* <Image source={BleScan} resizeMode="contain" /> */}
           <LottieView
-            className="w-[100%] h-[100%]"
             source={require("../assets/bleScan.json")}
             autoPlay
             loop
+            className="flex-1 items-center justify-center"
           />
         </View>
       </View>
